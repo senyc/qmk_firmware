@@ -36,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
       KC_TRNS,  KC_1,     KC_2,     KC_3,     KC_4,     KC_5,                   KC_6,     KC_7,      KC_8,     KC_9,     KC_0,     KC_TRNS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
-      KC_TRNS,  KC_BSLS,  KC_PIPE,  KC_PLUS,  KC_EQL,   KC_TILDE,               KC_UNDS,  KC_MINUS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,
+      KC_TRNS,  KC_BSLS,  KC_PIPE,  KC_PLUS,  KC_EQL,   KC_TILDE,               KC_UNDS,  KC_MINUS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
                                           KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS
                                       //`--------------------------'  `--------------------------'
@@ -49,19 +49,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_TRNS,  KC_LBRC,  KC_RBRC,  KC_LCBR,  KC_RCBR,  KC_GRAVE,               KC_LEFT,  KC_DOWN,   KC_UP,    KC_RIGHT,  KC_TRNS,  KC_TRNS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
       KC_TRNS,  KC_BSLS,  KC_PIPE,  KC_PLUS,  KC_EQL,   KC_TILDE,               KC_UNDS,  KC_MINUS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------|
                                           KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS
                                       //`--------------------------'  `--------------------------'
   ),
-    // page up page down home end
+    // Active when both one and two active (both mod keys pressed), contains functions and misc keys
     [3] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------+--------.
-      KC_PWR,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,                  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_TRNS,
+      KC_TRNS,   KC_F1,    KC_F2,    KC_F3,    KC_F4,   KC_F5,                  KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_TRNS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
-      KC_TRNS,  KC_MSTP,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_BRID,                KC_BRIU,  KC_VOLD,  KC_VOLU,  KC_MUTE,  KC_PSCR,  KC_TRNS,
+      KC_TRNS,  KC_MSTP,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_BRIU,                KC_HOME,  KC_PGDN,  KC_PGUP,  KC_END,   KC_PSCR,  KC_TRNS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
-      KC_TRNS,  KC_F11,   KC_F12,   KC_HOME,  KC_END,   KC_TRNS,                KC_PGDN,  KC_PGUP,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
-  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------+--------|
+      KC_TRNS,  KC_F11,   KC_F12,   KC_BRID,  KC_WAKE,  KC_PWR,                 KC_TRNS,  KC_VOLD,  KC_VOLU,  KC_MUTE,  KC_TRNS,  KC_TRNS,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------+--------|
                                           KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS
                                       //`--------------------------'  `--------------------------'
   ),
